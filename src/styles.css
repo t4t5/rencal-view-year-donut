@@ -1,0 +1,27 @@
+@layer components {
+  /* Ring segments are solid calendar colour, so the year reads as a chart. */
+  :where([data-slot="calendar-event"][data-view="year-donut"]) {
+    fill: var(--calendar-event-color);
+    stroke: var(--background);
+    stroke-width: 0.6;
+  }
+
+  :where([data-slot="calendar-event"][data-view="year-donut"]):not([data-selected]):hover {
+    filter: brightness(1.15);
+  }
+
+  :where([data-slot="calendar-event"][data-view="year-donut"])[data-selected] {
+    stroke: var(--foreground);
+    stroke-width: 2;
+  }
+
+  /* Centre list rows behave like timed agenda rows. */
+  :where([data-slot="calendar-event"][data-view="year-donut-list"]):not([data-selected]):hover {
+    background: var(--hover);
+  }
+
+  :where([data-slot="calendar-event"][data-view="year-donut-list"])[data-selected] {
+    background: var(--selected);
+    color: var(--selected-foreground);
+  }
+}

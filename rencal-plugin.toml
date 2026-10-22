@@ -1,0 +1,10 @@
+id = "t4t5.year-donut"
+name = "Year Donut"
+description = "The whole year as a ring: every day a slice, every event a coloured segment."
+min_rencal_version = "0.9.0"
+
+[[contributes.views]]
+id = "year-donut"
+name = "Year Donut"
+script = "dist/year-donut.js"
+css = "dist/year-donut.css"
