@@ -1,6 +1,8 @@
-# Year Donut
+# renCal donut year view
 
 A [renCal](https://rencal.org) view that shows the whole year as a ring. 1 January is at the top and the year runs clockwise, one slice per day.
+
+![Year Donut view in renCal](screenshot.png)
 
 - **Inner band:** timed events, stacked outwards from the centre in start order, in their calendar colour.
 - **Outer lanes:** all-day and multi-day events, drawn as arcs across the days they cover.
